@@ -1,5 +1,8 @@
 'use strict';
 
+var correctAnswer = 0;
+var userName = 'Nick';
+
 var userName = prompt('What is your name?')
 console.log(userName);
 alert('Hi ' + userName + ', welcome! Here are a few questions to give you insight about my interests!')
@@ -100,4 +103,5 @@ for(var i=0;i<6;i++){
         prompt('Sorry, you ran out of guesses! My favorite teams are the seahawks, lakers, bears, rams, supersonics, and dodgers!');
     }
 }
+
 alert(userName + 'you crushed my guessing game! You got ' + correctAnswer + 'out of 7 questons right! Hope you enjoy getting to know more about me!')
