@@ -138,12 +138,12 @@ alert(userName + ' thanks for playing! You got ' + correctAnswer + ' out of 7 qu
 }
 
 
-// questionOne();
-// questionTwo();
-// questionThree();
-// questionFour();
-// questionFive();
-// questionSix();
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
 questionSeven();
-// questionEight();
-// farewell();
+questionEight();
+farewell();
