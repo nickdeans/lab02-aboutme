@@ -4,6 +4,7 @@
 
 - references
 - people that have helped
+- James Gerstenberger and Alan Hung
 
 # author
 
