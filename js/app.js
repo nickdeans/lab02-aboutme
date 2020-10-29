@@ -81,6 +81,23 @@ for(var i=0;i<3;i++){
     }
 } 
 
-
-
-
+var favSports = ['seahawks', 'lakers', 'bears', 'rams', 'supersonics', 'dodgers'];
+// console.log(favSports;
+var guessTeam = prompt('What are some of my favorite sports teams!?').toLowerCase();
+for(var i=0;i<6;i++){
+    for(var n=0;n<favSports.length; n++){
+        if(guessTeam == favSports[n]){
+            alert('You got one! That is one of my favorite sports teams!');
+            guessTeam = false
+            i=6;
+        }
+    } if(guessTeam == false){
+        correctAnswer++
+        i=6;
+    } else if(guessTeam !== favSports && i != 6){
+        var guessTeam = prompt('You guessed wrong, try again!').toLowerCase();
+    } else if (i=6){
+        prompt('Sorry, you ran out of guesses! My favorite teams are the seahawks, lakers, bears, rams, supersonics, and dodgers!');
+    }
+}
+alert(userName + 'you crushed my guessing game! You got ' + correctAnswer + 'out of 7 questons right! Hope you enjoy getting to know more about me!')
