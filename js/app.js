@@ -12,7 +12,7 @@ if(sports.toLowerCase() === 'yes'){
 } else if(sports.toLowerCase() === 'no'){
     alert('Nice try, but I am sure you will get the next one!')
 } else {
-    alert('please answer yes or no')
+    alert('please answer yes or no');
 }
 
 var junkfood = prompt('Do I like junkfood?')
@@ -56,8 +56,31 @@ if(candles.toLowerCase() === 'yes'){
 } else if(candles.toLowerCase() === 'no'){
     alert('Maybe next time you will guess right!')
 } else {
-    alert('please answer yes or no')
+    alert('please answer yes or no');
 }
+
+var favNumber = prompt('Can you guess my favorite number out of 10?')
+console.log(favNumber);
+for(var i=0;i<3;i++){
+    if(favNumber === '8'){
+        alert('You got it! Watching Kobe in his 8 jersey was my favorite thing growing up!');
+    } else if(favNumber < '8'){
+        alert('Try guessing higher!');
+        favNumber = prompt('Pick another number bewteen 1-10');
+    } else if(favNumber > '8'){
+        alert('Try guessing lower!');
+        favNumber = prompt('Pick another number bewteen 1-10');
+    } else{
+        alert('Sorry try again');
+        favNumber = prompt('Pick another number bewteen 1-10');
+    }
+    if(i == 2 && favNumber === '8'){
+        alert('You got it! Watching Kobe in his 8 jersey was my favorite thing growing up!');
+    } else if (i == 2 && favNumber !== 8){
+        alert('Sorry, you ran out of guesses! It was 8 :(')
+    }
+} 
+
 
 
 
